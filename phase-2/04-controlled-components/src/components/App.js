@@ -9,7 +9,10 @@ function App() {
   const [catsArray, setCatsArray] = useState(catAlbumData)
   const [currentCat, setCurrentCat] = useState('All')
 
-  console.log("currentCat: ", currentCat)
+  function handleAddCat(newCatObj) {
+    const newArr = [...catsArray, newCatObj]
+    setCatsArray(newArr)
+  }
 
   // RENDER //
   return (
@@ -20,7 +23,7 @@ function App() {
 
       <CatCardsContainer catsArray={ catsArray } currentCat={currentCat} />
 
-      <NewCatForm />
+      <NewCatForm handleAddCat={handleAddCat} />
     </>
   )
 
