@@ -1,20 +1,45 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import LocationCard from './LocationCard'
 import LocationForm from './LocationForm'
-
-const exampleLocation = [
-  {
-    id: 1,
-    name: 'Trinidad',
-    description: 'An island in the Carribean',
-    image: 'https://deih43ym53wif.cloudfront.net/trinidad-tobago-coast-parlatuvier-bay-shutterstock_597815615_bcca728dbf.jpeg'
-  }
-]
 
 function LocationsList() {
 
   // STATE //
-  const [locations, setLocations] = useState(exampleLocation)
+  const [locations, setLocations] = useState([])
+  
+  // USEEFFECT //
+  useEffect(() => {
+    fetch('http://localhost:3000/locations')
+      .then( res => res.json() )
+      .then( data => setLocations( data ) )
+  }, [])
+  
+  useEffect(() => {
+
+    console.log("Locations has changed")
+
+    return () => console.log("I am cleaning up!")
+
+  }, [locations])
+
+  // EVENT HANDLERS //
+
+    async function handleAddLocation(newLocation) {
+
+      const response =  await fetch('http://localhost:3000/locations', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify( newLocation )
+      })
+
+      const data = await response.json()
+      
+      const updatedLocations = [...locations, data]
+
+      setLocations( updatedLocations )
+  }
 
   // MAP //
   const mappedLocations = locations.map( location => (
@@ -30,7 +55,7 @@ function LocationsList() {
   return (
     <div className="locations-list">
 
-      <LocationForm />
+      <LocationForm handleAddLocation={handleAddLocation} />
 
       { mappedLocations }
 

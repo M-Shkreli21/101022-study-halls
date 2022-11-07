@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function LocationForm() {
+function LocationForm({ handleAddLocation }) {
 
   const [name, setName] = useState('')
   const [description, setDescription] = useState('')
@@ -8,6 +8,14 @@ function LocationForm() {
 
   function handleSubmit(e) {
     e.preventDefault()
+
+    const newLocation = {
+      name,
+      description,
+      image
+    }
+
+    handleAddLocation(newLocation)
   }
 
   return (
@@ -16,8 +24,8 @@ function LocationForm() {
       <input
         type="text"
         onChange={e => setName(e.target.value)}
-        value={name}
         placeholder="name"
+        value={name}
       />
 
       <input

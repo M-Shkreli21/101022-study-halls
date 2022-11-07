@@ -17,6 +17,24 @@
       "name": "Mushroom Kingdom",
       "description": "There are mushrooms everywhere. Please don't eat them, some are sentient and wouldn't like that.",
       "image": "https://mario.wiki.gallery/images/7/7d/SMO_Mushroom_Brochure_Art.png"
+    },
+    {
+      "name": "New York",
+      "description": "The big apple",
+      "image": "https://www.thewallstreetexperience.com/wp-content/uploads/2020/07/Final-44-of-148-1.jpg",
+      "id": 4
+    },
+    {
+      "name": "Dumbo, Brooklyn",
+      "description": "Hipster Manhattan",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjIxMDM1NDU1N15BMl5BanBnXkFtZTcwMDMxOTAyNw@@._V1_.jpg",
+      "id": 5
+    },
+    {
+      "name": "Perth Amboy",
+      "description": "It's in NJ / Australia",
+      "image": "http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQM2RRpx6glD_v1ojthUaGBTKSsZOTg_Fr_sNZmbCKXAiC8eCDICJdEXzlDet4LO0WI",
+      "id": 6
     }
   ]
 }
