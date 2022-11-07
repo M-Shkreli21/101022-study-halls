@@ -1,0 +1,22 @@
+{
+  "locations": [
+    {
+      "id": 1,
+      "name": "Hogwarts",
+      "description": "An enchanted castle filled with mystery, intrigue, and excitement. Come stay for a vacation that can only be called magical!",
+      "image": "https://i.insider.com/60957a3d34af8d001859c0ff?width=700"
+    },
+    {
+      "id": 2,
+      "name": "Tattooine",
+      "description": "Come find yourself on a rustic moisture farm.",
+      "image": "https://www.syfy.com/sites/syfy/files/starwars_tattooine_binary_sunset.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Mushroom Kingdom",
+      "description": "There are mushrooms everywhere. Please don't eat them, some are sentient and wouldn't like that.",
+      "image": "https://mario.wiki.gallery/images/7/7d/SMO_Mushroom_Brochure_Art.png"
+    }
+  ]
+}
