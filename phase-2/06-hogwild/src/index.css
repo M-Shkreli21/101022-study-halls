@@ -91,6 +91,10 @@ ul {
   opacity: 1;
 }
 
+.pigTile img {
+  width: 100%;
+}
+
 .minBackgroundSneak {
   position: absolute;
   width: inherit;
@@ -140,6 +144,9 @@ ul {
   clear: both;
 }
 
+.hide {
+  display: none;
+}
 
 @keyframes App-logo-spin {
   from {
