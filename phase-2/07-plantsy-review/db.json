@@ -1,0 +1,76 @@
+{
+  "plants": [
+    {
+      "id": 1,
+      "name": "Aloe",
+      "image": "./images/aloe.jpg",
+      "price": 15.99
+    },
+    {
+      "id": 2,
+      "name": "ZZ Plant",
+      "image": "./images/zz-plant.jpg",
+      "price": 25.98
+    },
+    {
+      "id": 3,
+      "name": "Pilea peperomioides",
+      "image": "./images/pilea.jpg",
+      "price": 5.99
+    },
+    {
+      "id": 4,
+      "name": "Pothos",
+      "image": "./images/pothos.jpg",
+      "price": 12.11
+    },
+    {
+      "id": 5,
+      "name": "Jade",
+      "image": "./images/jade.jpg",
+      "price": 10.37
+    },
+    {
+      "id": 6,
+      "name": "Monstera Deliciosa",
+      "image": "./images/monstera.jpg",
+      "price": 25.99
+    },
+    {
+      "id": 7,
+      "name": "Fiddle Leaf Fig",
+      "image": "./images/fiddle-leaf-fig.jpg",
+      "price": 55
+    },
+    {
+      "price": 199.99,
+      "name": "ORCHID",
+      "image": "https://www.ikea.com/us/en/images/products/fejka-artificial-potted-plant-orchid-white__0748887_pe745276_s5.jpg?f=s",
+      "id": 8
+    },
+    {
+      "price": 1002,
+      "name": "BULBASAUR",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+      "id": 9
+    },
+    {
+      "price": 0.01,
+      "name": "SOMTHING COOL",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+      "id": 10
+    },
+    {
+      "price": 1005.99,
+      "name": "IVYSAUR",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png",
+      "id": 11
+    },
+    {
+      "price": 1006.24,
+      "name": "VENUSAUR",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
+      "id": 12
+    }
+  ]
+}
