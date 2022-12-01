@@ -1,3 +1,6 @@
 [submodule "phase-3/phase-3/01-objection-orientation"]
 	path = phase-3/phase-3/01-objection-orientation
 	url = git@github.com:RikkuX491/phase-3-study-hall-01-object-orientation.git
+[submodule "phase-3/git"]
+	path = phase-3/git
+	url = git@github.com:learn-co-curriculum/phase-3-mock-code-challenge-freebie-tracker.git
